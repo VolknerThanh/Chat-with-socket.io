@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ebeef4;
+}
+.container{
+	position: relative;
+	left: 46%;
+	top: 30%;
+	max-width: 700px;
+	max-height: 450px;
+}
+.btn{
+	cursor: pointer;
+	outline: none;
+	width: 80px;
+	height: 10px;
+	padding: 5px;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: sans-serif;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-signup{
+	margin-top: 10px;
+	float: right;
+}
+.btn-send{
+	float: right;
+}
+td{
+	min-width: 230px;
+	max-width: 200px;
+}
+td#td_username{
+	min-width: 80px!important;
+	max-width: 100px!important;
+	text-align: center;
+}
+td#td_content{
+	min-width: 300px!important;
+	padding: 10px;
+}
+#SignUpBox{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+#SignUp{
+	margin: 10px 0px 10px 0px;
+	min-width: 180px;
+	background-color: transparent;
+	text-transform: capitalize;
+}
+#group-txt{
+	background-color: transparent;
+	min-width: 100px;
+}
+#textfield{
+	min-width: 350px;
+	outline: none;
+	background-color: transparent;
+}
+#UserID{
+	color: #4c1039;
+	font-weight: 900;
+	font-size: 105%;
+}
+#msgContents{
+	background-color: #aaa;
+	border-radius: 20px;
+	box-sizing: border-box;
+	position: relative;
+	color: black;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.chat-form{
+	display: none;
+	position: relative;
+}
+.form-left{
+	width: 29%;
+	float: left;
+}
+.form-right{
+	width: 70%;
+	float: right;
+}
+.BoxTitle{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	padding: 5px;
+	background-color: #1fc1ad;
+	border: 1px solid black;
+}
+#chatBox, #CreateGroupBox{
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+}
+tbody{
+
+	max-height: 100px;
+	overflow-y: auto;
+}
+#listMsg{
+	max-height: 200px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#chatBox {
+	border-bottom: 2px solid black;
+}
+.User, .Room{
+	padding: 2px 0 2px 10px;
+	color: green;
+	font-size: 120%;
+}
+.Username{
+	color: #963947;
+	font-variant:small-caps;
+}
+.Intro{
+	float: right;
+	padding-right: 30px;
+}
+.btn-LogOut{
+	background-color: transparent;
+	float: right;
+	margin: 5px 30px 0 0;
+}
+.RoomName{
+	font-weight: 900;
+	color: gray;
+}

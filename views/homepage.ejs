@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Socket io</title>
+	<meta charset="utf-8">
+	<!-- Lib -->
+	<link rel="stylesheet" href="styles.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="socket.io/socket.io.js"></script>
+	<!-- script -->
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<table id="SignUpBox">
+			<tbody>
+				<tr>
+					<td colspan="2" style="min-width: 300px;">
+						<input type="text" id="SignUp" name="SignUp" placeholder="Sign up your name">
+						<div class="btn btn-signup">Sign up</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="chat-form">
+			<div class="form-left">
+				<div class="BoxTitle">Users Online</div>
+				<ul class="ListUsers"></ul>
+				<div class="BoxTitle">Groups</div>
+				<div class="ListGroups"></div>
+			</div>
+				
+			<div class="form-right">
+				<div class="btn btn-LogOut">Log Out</div>
+				<h2 class="Intro">hi,  <span class="Username"></span></h2>
+				<br><br>
+				<h4>Count msg : <span id='count'></span></h4>
+				<h4>group : <span class="RoomName">...</span></h4>
+				<br>
+				<table id="CreateGroupBox">
+					<tbody>
+						<tr>
+							<td colspan="2">
+								<h3 style="text-align: center">Create Group</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" id="group-txt" placeholder="enter group name...">
+							</td>
+							<td>
+								<div class="btn btn-CreateGroup">Join</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<table id="chatBox">
+					<tbody>
+						<tr>
+							<td>
+								<h3 style="text-align: center">Send Messages</h3>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="min-width: 480px;">
+								<input type="text" id="textfield" name="textfield" value="" placeholder="Enter the text..." />
+								
+								<div class="btn btn-send">Send
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div id="listMsg">
+									<table id="msg">
+										<tbody>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="typing"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+			
+	</div>
+</body>
+</html>
